@@ -10,18 +10,21 @@ class BandsContainer extends Component {
     }
   }
 
-  handleSubmit = e => {
-    debugger
-    console.log('in bandscontainer handlesubmit', e);
-    this.props.addBand()
-  }
+  // handleSubmit = e => {
+  //   debugger
+  //   console.log('in bandscontainer handlesubmit', e);
+  //   this.props.addBand()
+  // }
 
   render() {
     //debugger
     return(
       <div>
         <h1>Bands Container</h1>
-        <BandInput addBand={this.handleSubmit} />
+        <BandInput addBand={this.props.addBand} />
+        <ul>
+          {this.props.bands.map(b => <li>{b.name}</li>)}
+        </ul>
       </div>
     )
   }
