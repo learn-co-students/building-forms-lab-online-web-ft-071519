@@ -1,5 +1,5 @@
 // Add BandInput component
-// 1) has an text input field
+// 1) has a text input field
 // 2) has an initial state with text key set to empty string
 // 3) changes the local state on input change
 // 4) has a prop, addBand, that is called when the form is submitted
